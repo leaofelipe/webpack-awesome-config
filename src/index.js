@@ -1,2 +1,3 @@
 console.log('It Works')
-import "./style/main.css"
+import "./style/main.scss"
+import "./assets/images/icon-square-small.jpg"
