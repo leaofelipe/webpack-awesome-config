@@ -1,9 +1,15 @@
+const webpack = require("webpack")
+const HtmlWebpackPlugin = require("html-webpack-plugin")
 const webpackMerge = require("webpack-merge")
 
 module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
   return webpackMerge({
     mode,
-    output: {filename: "bundle.js"}
+    output: {filename: "bundle.js"},
+    plugins: [
+      new HtmlWebpackPlugin(),
+      new webpack.ProgressPlugin()
+    ]
   })
 }
 
