@@ -1,0 +1,22 @@
+{
+  "name": "webpack-awesome-config",
+  "version": "1.0.0",
+  "description": "Webpack Starter configuration",
+  "main": "index.js",
+  "engines": {
+    "node": "^10.15"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leaofelipe/webpack-awesome-config.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.29",
+    "webpack-cli": "^3.2"
+  },
+  "dependencies": {}
+}
