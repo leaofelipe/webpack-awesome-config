@@ -7,6 +7,7 @@ module.exports = ({ mode, presets } = { mode: "development", presets: [] }) => {
   return webpackMerge(
     {
       mode,
+      entry: ["@babel/polyfill", "./src/index.js"],
       output: {filename: "bundle.js"},
       plugins: [new webpack.ProgressPlugin()]
     },
