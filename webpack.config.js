@@ -17,6 +17,9 @@ module.exports = ({ mode, presets } = { mode: "development", presets: [] }) => {
             use: {
               loader: "babel-loader"
             }
+          }, {
+            test: /\.(eot|ttf|woff|woff2)$/,
+            loader: 'url-loader'
           }
         ]
       },
