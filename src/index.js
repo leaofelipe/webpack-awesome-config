@@ -1,4 +1,3 @@
-console.log('It Works')
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './style/main.scss'

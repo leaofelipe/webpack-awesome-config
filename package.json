@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Webpack React configuration",
   "author": "Felipe Leão <felipe@felipeleao.com> (http://felipeleao.com/)",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "webpack": "webpack",
