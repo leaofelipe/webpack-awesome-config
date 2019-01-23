@@ -9,7 +9,11 @@ module.exports = () => ({
     rules: [
       {
         test: /\.s?css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+        use: [
+          MiniCssExtractPlugin.loader,
+          {loader: "css-loader", options: {sourceMap: true}},
+          {loader: "sass-loader", options: {sourceMap: true}}
+        ]
       },
 			{
         test: /\.(png|jpe?g|gif)$/i,
@@ -32,5 +36,6 @@ module.exports = () => ({
       filename: "[name].[hash].css",
       chunkFilename: "[id].[hash].css"
     })
-  ]
+  ],
+  devtool: 'source-map'
 });
