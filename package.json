@@ -9,8 +9,8 @@
     "webpack": "webpack",
     "webpack-dev-server": "webpack-dev-server",
     "dev": "npm run webpack-dev-server -- --env.mode development --hot",
-    "prod": "npm run webpack -- --env.mode production",
-    "prod:analyzer": "npm run prod -- --env.presets analyze"
+    "build:prod": "npm run webpack -- --env.mode production",
+    "prod:analyzer": "npm run build:prod -- --env.presets analyze"
   },
   "repository": {
     "type": "git",
