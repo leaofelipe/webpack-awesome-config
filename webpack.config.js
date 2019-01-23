@@ -19,7 +19,10 @@ module.exports = ({ mode, presets } = { mode: "development", presets: [] }) => {
             }
           }, {
             test: /\.(eot|ttf|woff|woff2)$/,
-            loader: 'url-loader'
+            loader: 'url-loader',
+            options: {
+              name: 'style/[name].[ext]'
+            }
           }
         ]
       },
