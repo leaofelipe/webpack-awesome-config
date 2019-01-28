@@ -1,19 +1,19 @@
-const webpack = require("webpack")
-const webpackMerge = require("webpack-merge")
-const modeConfig = env => require(`./build-utils/webpack.${env}`)(env);
-const presetConfig = require("./build-utils/loadPresets");
+const webpack = require('webpack')
+const webpackMerge = require('webpack-merge')
+const modeConfig = env => require(`./build-utils/webpack.${env}`)(env)
+const presetConfig = require('./build-utils/loadPresets')
 
-module.exports = ({ mode, presets } = { mode: "development", presets: [] }) => {
+module.exports = ({ mode, presets } = { mode: 'development', presets: [] }) => {
   return webpackMerge({
     mode,
-    entry: ["@babel/polyfill", "./src/index.js"],
-    output: {filename: "bundle.js"},
+    entry: ['@babel/polyfill', './src/index.js'],
+    output: { filename: 'bundle.js' },
     module: {
       rules: [{
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
+          loader: 'babel-loader'
         }
       }, {
         test: /\.(eot|ttf|woff|woff2)$/,

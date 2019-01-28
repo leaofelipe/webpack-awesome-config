@@ -1,10 +1,10 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin")
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = () => ({
   module: {
     rules: [{
       test: /\.s?css$/,
-      use: ["style-loader", "css-loader", "sass-loader"]
+      use: ['style-loader', 'css-loader', 'sass-loader']
     }, {
       test: /\.(png|jpe?g|gif)$/i,
       use: [{
@@ -27,4 +27,4 @@ module.exports = () => ({
     })
   ],
   devtool: 'inline-source-map'
-});
+})
