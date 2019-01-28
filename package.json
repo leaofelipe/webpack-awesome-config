@@ -27,7 +27,8 @@
         "prettier-standard",
         "git add"
       ]
-    }
+    },
+    "ignore": ["src/tests/**/*.js"]
   },
   "keywords": [],
   "license": "MIT",
