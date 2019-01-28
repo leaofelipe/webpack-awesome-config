@@ -24,6 +24,7 @@
     "linters": {
       "*.{js,scss}": [
         "npm run format",
+        "npm run lint",
         "git add"
       ]
     },
