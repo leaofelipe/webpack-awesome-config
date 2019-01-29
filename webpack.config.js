@@ -40,16 +40,14 @@ module.exports = ({ mode, presets } = { mode: 'development', presets: [] }) =>
           safe: true
         }),
         new webpack.DefinePlugin({
-          'process.env.APP_VERSION': JSON.stringify(
-            process.env.npm_package_version
-          ),
           'process.env.APP_KEY': JSON.stringify(process.env.APP_KEY)
         })
       ],
       devServer: {
         contentBase: path.join(__dirname, 'dist'),
         port: 8080,
-        hot: true
+        hot: true,
+        historyApiFallback: true
       }
     },
     modeConfig(mode),
