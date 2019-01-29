@@ -28,23 +28,6 @@ module.exports = () => ({
             loader: 'image-webpack-loader'
           }
         ]
-      },
-      {
-        test: /\.svg$/,
-        use: [
-          {
-            loader: 'svg-url-loader',
-            options: {
-              limit: 1 * 1024,
-              noquotes: true,
-              name: '[name].[ext]',
-              outputPath: path.resolve(__dirname, 'images')
-            }
-          },
-          {
-            loader: 'image-webpack-loader'
-          }
-        ]
       }
     ]
   },
