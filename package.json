@@ -8,9 +8,10 @@
   "scripts": {
     "webpack": "webpack",
     "webpack-dev-server": "webpack-dev-server",
-    "dev": "npm run webpack-dev-server -- --env.mode development --hot",
+    "development": "npm run webpack-dev-server -- --env.mode development --hot",
     "build:prod": "npm run webpack -- --env.mode production",
     "test": "cross-env NODE_ENV=test jest --watch",
+    "test:coverage": "cross-env NODE_ENV=test jest --collect-coverage",
     "format": "prettier --write \"src/**/*.{jsx, js, css, html, json}\"",
     "lint": "eslint \"src/**/*.{jsx, js, css, html, json}\""
   },
