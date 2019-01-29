@@ -7,18 +7,16 @@
   "main": "index.js",
   "scripts": {
     "webpack": "webpack",
-    "format": "prettier --write \"src/**/*.{jsx, js, css, html, json}\"",
-    "lint": "eslint \"src/**/*.{jsx, js, css, html, json}\"",
     "webpack-dev-server": "webpack-dev-server",
     "dev": "npm run webpack-dev-server -- --env.mode development --hot",
     "build:prod": "npm run webpack -- --env.mode production",
-    "prod:analyzer": "npm run build:prod -- --env.presets analyze"
+    "format": "prettier --write \"src/**/*.{jsx, js, css, html, json}\"",
+    "lint": "eslint \"src/**/*.{jsx, js, css, html, json}\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leaofelipe/webpack-react-config.git"
   },
-  "keywords": [],
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.2.2",
